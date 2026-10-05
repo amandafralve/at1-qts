@@ -61,13 +61,13 @@ def verificar_plantio(
     validar_cultura(cultura)
     validar_estacao(estacao)
 
-    if not isinstance(nivel, int):
+    if isinstance(nivel, bool) or not isinstance(nivel, int):
         raise TypeError("O nível deve ser um número inteiro.")
 
-    if not isinstance(agua, (int, float)):
+    if isinstance(agua, bool) or not isinstance(agua, (int, float)):
         raise TypeError("A quantidade de água deve ser numérica.")
 
-    if not isinstance(area, (int, float)):
+    if isinstance(area, bool) or not isinstance(area, (int, float)):
         raise TypeError("A área deve ser numérica.")
 
     if nivel < 0:
@@ -109,7 +109,7 @@ def calcular_rendimento(
     """Calcula o rendimento da plantação."""
     validar_cultura(cultura)
 
-    if not isinstance(nivel, int):
+    if isinstance(nivel, bool) or not isinstance(nivel, int):
         raise TypeError("O nível deve ser um número inteiro.")
 
     if nivel < 0:

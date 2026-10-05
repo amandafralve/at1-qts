@@ -14,7 +14,7 @@ Implementar regras determinísticas para:
 * verificar nível mínimo do jogador;
 * verificar quantidade de água;
 * verificar área disponível;
-* determinar a condição de crescimento da plantação.
+* determinar o rendimento da plantação.
 
 ## 3. Culturas
 
@@ -101,6 +101,6 @@ O sistema deve informar de maneira determinística se o plantio é permitido e, 
 * testes automatizados com `pytest`;
 * cobertura com `pytest-cov`;
 * cobertura de branches utilizando `--cov-branch`;
-* testes seguindo o padrão Arrange, Act, Assert;
+* testes seguindo o padrão Arraange, Act, Assert;
 * utilização de testes parametrizados;
 * aplicação de Equivalence Partitioning, Boundary Value Analysis e Error Guessing.
